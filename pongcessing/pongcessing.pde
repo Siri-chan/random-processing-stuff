@@ -28,11 +28,11 @@ void draw(){
    // Update the position of the shape
   pos[0] = pos[0] + ( speed[0] * direction[0] );
   pos[1] = pos[1] + ( speed[1] * direction[1] );
-  if (pos[0] == 40 && pos[1] < player1y + 100 && pos[1] > player1y){
+  if (pos[0]-rad == 40 && pos[1] < player1y + 100 && pos[1] > player1y){
     direction[0] *= -1;
      pos[0] = pos[0] + ( 10 * direction[0] );
   }
-   if (pos[0] == width-40 && pos[1] < player2y + 100 && pos[1] > player2y){
+   if (pos[0]+rad == width-40 && pos[1] < player2y + 100 && pos[1] > player2y){
     direction[0] *= -1;
      pos[0] = pos[0] + ( 10 * direction[0] );
   }
