@@ -77,4 +77,3 @@ if(key == 's'){keys[1] = false;}
 if(keyCode == UP){keys[2] = false;}
 if(keyCode == DOWN){keys[3] = false;}
 }
-} 
